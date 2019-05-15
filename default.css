@@ -1,0 +1,552 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+:root{
+    --bg-color: rgb(66, 214, 236);
+    --pink: rgb(240, 140, 235);
+    --hover-color: rgba(240, 140, 235, 0.6);
+}
+html{
+    background-color: var(--bg-color);
+    font-size: 65.2px;
+}
+/* --------home page mandala image ---------- */
+a{
+    color: white;
+    /* text-decoration: none; */
+}
+.mainsection{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    height: 100vh;
+}
+
+.mandala{
+    background: url('imgs/babymandala.jpg') no-repeat  ;
+    background-size: cover; 
+    background-position: center;
+    /* height: auto; */
+}
+
+#navbar{
+    width: 100%;
+    padding: 15px ;
+    position: absolute;
+}
+/* ----------- list items menu----------- */
+.menu{
+    display: flex;
+    float: right;
+    font-family: arial;
+}
+.creative{
+    margin-left: 10px;
+    width: 90%;
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: arial;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 10px;
+    background-color: var(--hover-color);
+    margin: 0 15px 0 0;
+}
+.creative:hover, button:hover{
+    background-color: var(--pink);
+}
+li{
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: arial;
+    cursor: pointer;
+    list-style-type: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: var(--hover-color);
+    margin: 0 15px 0 0;
+}
+li:hover{
+    background-color: var(--pink);
+}
+
+/* --------image and intro part-------- */
+.introcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    font-family: calibri;
+    color: white;
+}
+
+h1{
+    font-size: 45px;
+}
+h4{
+    font-size: 25px;
+}
+#hire{
+    width: 25%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: var(--hover-color); 
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+#hire:hover{
+   background-color: var(--pink);
+}
+/* -------------CONTENT-------------- */
+
+/* -------------ABOUT-------------- */
+
+#aboutinfo{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    border: 1px solid white;
+    grid-gap: 10px;
+    font-family: calibri;
+    margin: 2rem  0.8rem 0.8rem 0.8rem;
+    box-shadow: 5px 5px 10px var(--hover-color);
+}
+.about{
+    background-color: var(--pink);
+    padding:  0.5rem;
+}
+.basicinfo{
+    padding: 0.5rem;
+}
+.age, .email, .phone, .address, .language, .social {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    line-height: 45px;
+}
+
+p{
+    font-size: 20px;
+}
+.abouttxt{
+    line-height: 30px;
+}
+h3{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 20px;    
+}
+h6{
+    font-size: 20px;
+    margin: 0 10px 10px 0 ;
+}
+
+/* -------------PROFFESIONAL SKILLS-------------- */
+
+#profskills{
+    border: 1px solid white;
+    grid-gap: 10px;
+    font-family: calibri;
+    margin: 2rem  0.8rem 0.8rem 0.8rem;
+    box-shadow: 5px 5px 10px white;
+    background-color: var(--pink);
+    padding:  0.5rem;
+    color: white;
+}
+.professionaldiv{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.bar1, .bar2, .bar3, .bar4, .bar5{
+    background-color: white;
+    height: 10px;
+    margin-bottom: 10px;
+}
+.percentage p{
+    font-size: 20px;
+    margin: 27px;
+    font-weight: bold;
+}
+.bar1{
+    width: 80%;
+}
+.bar2{
+    width: 60%;
+}
+.bar3{
+    width: 70%;
+}
+.bar4{
+    width: 60%;
+}
+.bar5{
+    width: 40%;
+}
+
+
+/* -------------GALLERY -------------- */
+
+#gallery{
+    font-family: calibri;
+    text-align: center;
+    margin: 2rem  0.8rem 0.8rem 0.8rem;
+}
+
+.uidesign {
+    box-shadow: 5px 5px 10px var(--pink);
+    border: 1px solid white;
+    height: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin-bottom: 80px;
+}
+.bunny, .junoon, .mathsg{
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+    justify-content: center;
+}
+.junoon{
+    justify-content: right;
+}
+.imgholder, .ld,.cd1{
+    perspective: 600px;
+}
+.b1, .b2, .b3, .m1, .m2, .m3,
+.p1, .p2, .p3, .l1, .l2, .l3,
+.c1, .c2, .c3{
+    transform: rotateY(50deg);
+    transition: all 1s ease;
+}
+.m1:hover, .m2:hover, .m3:hover, .b1:hover,
+ .b2:hover, .b3:hover, .p1:hover, .p2:hover, 
+ .p3:hover, .l1:hover, .l2:hover, .l3:hover,
+ .c1:hover, .c2:hover, .c3:hover{
+    transform: rotateY(0deg);
+}
+
+.graphicdesign, .ccd{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    padding: 60px 30px 50px 30px;
+    box-shadow: 5px 5px 10px var(--pink);
+    border: 1px solid white;
+    margin-bottom: 1.5em;
+}
+
+
+/* ---------------------WORK EXPERIENCE------------------- */
+#workexp h3{
+    text-align: center;
+    font-family: calibri;
+    margin: 1.5rem  0.5rem 0.5rem 0.5rem;
+}
+
+.workexp1, .workexp2, .workexp3{
+    font-family: calibri;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    border: 1px solid white;
+    margin: 0.7rem;
+    box-shadow: 5px 5px 10px var(--hover-color);
+}
+.exp1, .exp2info, .exp3{
+    background-color: var(--pink);
+    padding:  0.6rem;
+    color: white;
+}
+.exp1info, .exp2, .exp3info {
+    padding: 0.6rem;
+    background-color: white;
+}
+.logotext{
+    font-size: 25px;
+}
+#gdlist{
+    list-style-type: circle;
+}
+/* -------------------CONTACT--------------------- */
+#contactinfo{
+    font-family: calibri;
+    text-align: center;
+    margin-top: 1.8rem;    
+}
+
+.contactflex{
+    text-align: left;
+    padding: 0.6rem;
+    background-color: var(--pink);
+    width: 90vw; 
+    border: 1px solid white;
+    margin: 0.7rem 0.7rem 0.5rem 0.7rem;
+    box-shadow: 5px 5px 10px var(--hover-color);
+}
+.name2, .email2, .phone2, .insta{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+}
+.topbutton{
+    display: flex;
+    justify-content: center;
+}
+button{
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: arial;
+    font-weight: bold;
+    padding: 10px 28px;
+    background-color: var(--hover-color);
+    margin: 0 15px 0 0;
+    outline: none;
+    border: none;
+}
+footer{
+    background-color: white;
+    color: var(--pink);
+    text-align: center;
+    font-family: calibri;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+
+
+
+
+/* -------------------media--------------------- */
+@media(max-width: 1024px ) {
+    .menu{
+        display: none;
+    }
+    .mainsection{
+        display: grid;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .graphicdesign{
+        grid-gap: 0px;
+    }
+    #hire{
+        width: 100px;
+    }
+
+}
+@media (max-width: 768px) {
+    #aboutinfo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr; 
+    } 
+    .workexp1, .workexp2, .workexp3{
+        width: 90vw;
+        margin: 0.55rem; 
+    }
+    .bunny, .junoon, .mathsg{
+        display: grid;
+        grid-template-columns: repeat(3, 0.3fr);
+        margin-top: 60px;
+    }
+}
+
+
+
+@media (max-width: 375px), 
+(max-width: 414px)
+{
+    .mainsection{
+        display: grid;
+        grid-template-rows: 0.8fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .age, .email, .phone, .address, .language{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .homeimg{
+        width: 35vw;
+    }
+    h1{
+        font-size: 35px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+    .creative{
+        margin-left: 10px;
+        width: 65%;
+        font-size: 12px;
+        border-radius: 10px;
+        font-family: arial;
+        cursor: pointer;
+        font-weight: bold;
+        padding: 10px 10px;
+        background-color: var(--hover-color);
+        margin: 0 15px 0 0;
+    }
+    .workexp1, .workexp2, .workexp3{
+        font-family: calibri;
+        width: 90vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1.5fr;
+        border: 1px solid white;
+        margin: 0.3rem;
+        box-shadow: 5px 5px 10px var(--hover-color);
+    }
+    .contactflex{
+        width: 75vw;
+        padding: 0.4rem; 
+}
+    .name2, .email2, .phone2, .insta{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .age, .email, .phone, .address, .language, .social {
+        line-height: 35px;
+    }
+    .uidesign{
+        box-shadow: 5px 5px 10px var(--pink);
+        border: 1px solid white;
+        height: auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        margin-bottom: 80px;
+    }
+    .graphicdesign, .ccd{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding: 30px;
+    }
+    .imgholder, .ld, .cd1{
+        perspective: 0px;
+    }
+    .b1, .b2, .b3, .m1, .m2, .m3,
+    .p1, .p2, .p3, .l1, .l2, .l3, .c1, .c2, .c3{
+        transform: rotateY(0deg);
+        transition: none;
+    }
+}
+
+@media (max-width: 375px){
+    
+    #aboutinfo{
+        display: grid;
+        grid-template-rows: 1fr auto;
+        border: 1px solid white;
+        font-family: calibri;
+    }
+   
+    .basicinfo{
+        padding: 0.2rem;
+    }
+    .infoflex{
+        display: flex;
+        flex-direction: column;
+    }
+    p{
+        font-size: 20px;
+        margin: 0 10px 10px 0 ;
+    }
+    h3{
+        color: white;
+        font-size: 30px;
+        margin-bottom: 20px;    
+    }
+    h6{
+        font-size: 15px;
+        margin: 0 10px 10px 0 ;
+    }
+    #profskills{
+        border: 1px solid white;
+        grid-gap: 10px;
+        font-family: calibri;
+        margin: 1rem  0.8rem 0.8rem 0.8rem;
+        box-shadow: 5px 5px 10px white;
+        background-color: var(--pink);
+        padding:  0.5rem;
+        color: white;
+    }
+    .professionaldiv{
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+    .bar1, .bar2, .bar3, .bar4{
+        background-color: white;
+        height: 10px;
+        margin-bottom: 10px;
+    }
+    .percentage p{
+        font-size: 15px;
+        margin: 27px;
+        font-weight: bold;
+    }
+    .bar1{
+        width: 80%;
+    }
+    .bar2{
+        width: 60%;
+    }
+    .bar3{
+        width: 70%;
+    }
+    .bar4{
+        width: 60%;
+    }    
+    }
+
+@media (max-width: 320px), (max-width: 360px){
+   
+    #aboutinfo{
+        display: grid;
+        grid-template-rows: 1fr auto;
+        border: 1px solid white;
+        font-family: calibri;
+        margin: 0.8rem 0.2rem 0.2rem 0.2rem;
+    }
+    h1{
+        font-size: 25px;
+    }
+
+    h4{
+        font-size: 15px;
+    }
+    #hire{
+        height: 40px;
+        width: 25%;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        background-color: var(--hover-color);
+        font-weight: bold;
+        color: white;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .contactflex{
+        width: 84vw;
+        padding: 0.3rem; 
+        margin: 0.4rem;
+}
+    
+}
